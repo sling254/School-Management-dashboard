@@ -1,8 +1,7 @@
-import { AfterViewInit, Component, ViewChild, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, OnInit, NgModule } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
-
 
 
 
@@ -11,21 +10,36 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
   templateUrl: './student-manager.component.html',
   styleUrls: ['./student-manager.component.css']
 })
-export class StudentManagerComponent implements AfterViewInit {
+export class StudentManagerComponent implements OnInit {
 
-  constructor() { }
-  displayedColumns: string[] = ['regNo', 'name', 'attendance'];
-  dataSource = new MatTableDataSource<Student>(ELEMENT_DATA);
-  hideRequiredControl = new FormControl(false);
-
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    constructor() { }
+    students = ELEMENT_DATA
+    // displayedColumns: string[] = ['regNo', 'name', 'attendance'];
+    // dataSource = new MatTableDataSource<Student>(ELEMENT_DATA);
+    // hideRequiredControl = new FormControl(false);
+  
+   // @ViewChild(MatPaginator) paginator!: MatPaginator;
+  
+    ngOnInit(): void {
+      // this.dataSource.paginator = this.paginator;
+    }
   }
 
+// export class StudentManagerComponent implements AfterViewInit {
 
-}
+//   constructor() { }
+//   displayedColumns: string[] = ['regNo', 'name', 'attendance'];
+//   dataSource = new MatTableDataSource<Student>(ELEMENT_DATA);
+//   hideRequiredControl = new FormControl(false);
+
+//   @ViewChild(MatPaginator) paginator!: MatPaginator;
+
+//   ngAfterViewInit() {
+//     this.dataSource.paginator = this.paginator;
+//   }
+
+
+// }
 
 export interface Student {
   regNo: number;

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,8 +10,8 @@ import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { SchoolManagementComponent } from './components/school-management/school-management.component';
+import { TrainersComponent } from './components/trainers/trainers.component';
+
  
 
 
@@ -23,15 +23,19 @@ import { SchoolManagementComponent } from './components/school-management/school
     ToolBarComponent,
     TablesComponent,
     NotfoundComponent,
-    SchoolManagementComponent,
+
+    TrainersComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatPaginatorModule,
     MaterialModule
     
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

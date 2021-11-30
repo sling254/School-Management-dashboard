@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,11 +9,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
-
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-
-
+import { TrainersComponent } from './components/trainers/trainers.component';
  
 
 
@@ -25,15 +21,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     ToolBarComponent,
     TablesComponent,
     NotfoundComponent,
-    DashboardComponent,
+    TrainersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatPaginatorModule,
-    MaterialModule,
+    MaterialModule
     
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

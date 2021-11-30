@@ -16,10 +16,12 @@ const routes: Routes = [
   {path: 'students',component:StudentManagerComponent},
 
   {path: 'dash',component:DashboardComponent},
+  {path: '',component:DashboardComponent},
   {path: 'students',component:StudentManagerComponent}, 
   {path: 'courses',component:CourseComponent},
   {path: 'trainers',component:TrainersComponent},
-  {path:"**", component:NotfoundComponent}
+  {path: 'schools',component:SchoolManagementComponent},
+  /* {path:"**", component:NotfoundComponent} */
 
 ];
 

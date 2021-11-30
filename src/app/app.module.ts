@@ -11,6 +11,9 @@ import { TablesComponent } from './components/tables/tables.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
+
  
 
 
@@ -22,13 +25,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ToolBarComponent,
     TablesComponent,
     NotfoundComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatPaginatorModule,
-    MaterialModule
+    MaterialModule,
     
   ],
   providers: [],

@@ -9,7 +9,9 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+
 import { TrainersComponent } from './components/trainers/trainers.component';
+
  
 
 
@@ -21,7 +23,9 @@ import { TrainersComponent } from './components/trainers/trainers.component';
     ToolBarComponent,
     TablesComponent,
     NotfoundComponent,
+
     TrainersComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,45 +1,60 @@
-<h1 class= "text-center mt-5">COURSE MANAGEMENT</h1>
-<!-- <div class="container p-3">
-  <h1 class= "text-center">COURSE MANAGEMENT</h1>
-
-  <form >
-    <mat-form-field appearance="fill">
-        <input matInput placeholder="Search" required />
-      </mat-form-field>
-  </form>
-
-  <div class="mat-elevation-z8">
-    
-    <table mat-table [dataSource]="dataSource" class="table-striped" > -->
-
-        <!--- Note that these columns can be defined in any order.
-              The actual rendered columns are set as a property on the row definition" -->
-      
-        <!-- Position Column -->
-        <!-- <ng-container matColumnDef="regNo">
-          <th mat-header-cell *matHeaderCellDef> No. </th>
-          <td mat-cell *matCellDef="let element"> {{element.regNo}} </td>
-        </ng-container> -->
-      
-        <!-- Name Column -->
-        <!-- <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef> Name </th>
-          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-        </ng-container> -->
-      
-        <!-- Weight Column -->
-       <!--  <ng-container matColumnDef="attendance">
-          <th mat-header-cell *matHeaderCellDef> Description </th>
-          <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
-        </ng-container> -->
-      
-        <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
-      <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-                    showFirstLastButtons 
-                    aria-label="Select page of periodic elements">
-      </mat-paginator>
-  </div>
+<h1 class= "text-center mt-6">COURSE MANAGEMENT</h1>
+<div class="container mt-6">  
+  <div class="d-flex float-right flex-end"><a class="btn btn-primary btn-sm" href="#">Add Course</a></div>          
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Ref No.</th>
+        <th>Course Name</th>
+       <div class="text-center">
+          <th>Course Description</th>
+       </div>
+        <th>No. of Modules</th>
+        <th><a class="btn btn-primary btn-sm" href="#">Edit</a></th>
+        <th><a class="btn btn-danger btn-sm" href="#">Delete</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Piano</td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. At esse officiis, earum dolore odit nisi error! Vel, officia delectus velit perspiciatis sed et, labore totam maiores facilis repellendus consequuntur itaque.</td>
+        <td>10</td>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Guitar</td>
+        <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, cumque quos! Repudiandae officiis asperiores vero consectetur sit consequuntur cupiditate rem ab, sed, labore optio eligendi quae nisi voluptatem odio aliquam.</td>
+        <td>11</td>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Brass</td>
+        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla cum minus nam. Eum eos et omnis quam corporis, quo reprehenderit vel officiis, tempore dolore ullam exercitationem iste, autem laborum veniam.</td>
+        <td>9</td>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Drums</td>
+        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas eius distinctio eum est laboriosam, sint mollitia porro nemo ipsa minima dolor quos atque molestias consequuntur odit facilis eveniet natus. Quidem?</td>
+        <td>7</td>
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Violin</td>
+        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum cum error alias dolore ipsam qui delectus dolorum at, tenetur asperiores natus numquam fuga corporis? Ducimus placeat earum eveniet! Illum, ad.</td>
+        <td>6</td>
+        <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+        <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
- -->
